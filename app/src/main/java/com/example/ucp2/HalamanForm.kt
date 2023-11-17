@@ -1,4 +1,4 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
+@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3Api::class)
 
 package com.example.ucp2
 
@@ -27,7 +27,6 @@ fun HalamanForm(
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     onSelectionChanged1: (String) -> Unit,
     onSelectionChanged2: (String) -> Unit,
-    onNextButtonClicked: () -> Unit,
     dospemb1: List<String>,
     dospemb2: List<String>,
 ) {

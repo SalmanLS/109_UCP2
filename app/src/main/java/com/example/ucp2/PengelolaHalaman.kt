@@ -52,10 +52,11 @@ fun Ucp2App(
                     dospemb2 = dospem.map { id -> context.resources.getString(id) },
                     onSelectionChanged1 = { viewModel.setD1(it) },
                     onSelectionChanged2 = { viewModel.setD2(it) },
-                    onSubmitButtonClicked = { viewModel.setForm(it) },
-                    onNextButtonClicked = {
+                    onSubmitButtonClicked = {
+                        viewModel.setForm(it)
                         navController.navigate(PengelolaHalaman.View.name)
-                    }
+                    },
+
                 )
             }
             composable(route = PengelolaHalaman.View.name) {
