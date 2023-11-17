@@ -53,6 +53,9 @@ fun Ucp2App(
                     onSelectionChanged1 = { viewModel.setD1(it) },
                     onSelectionChanged2 = { viewModel.setD2(it) },
                     onSubmitButtonClicked = { viewModel.setForm(it) },
+                    onNextButtonClicked = {
+                        navController.navigate(PengelolaHalaman.View.name)
+                    }
                 )
             }
             composable(route = PengelolaHalaman.View.name) {

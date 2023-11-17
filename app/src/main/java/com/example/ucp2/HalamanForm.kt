@@ -27,6 +27,7 @@ fun HalamanForm(
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     onSelectionChanged1: (String) -> Unit,
     onSelectionChanged2: (String) -> Unit,
+    onNextButtonClicked: () -> Unit,
     dospemb1: List<String>,
     dospemb2: List<String>,
 ) {
@@ -97,7 +98,7 @@ fun HalamanForm(
                 }
             }
             Column {
-                Text(text = "Dosen Pembimbing 1")
+                Text(text = "Dosen Pembimbing 2")
                 dospemb2.forEach { item ->
                     Row (
                         modifier = Modifier.selectable(
@@ -122,7 +123,6 @@ fun HalamanForm(
             }
         }
         Button(
-            modifier = Modifier.weight(1f),
             // the button is enabled when the user makes a selection
             onClick = { onSubmitButtonClicked(listData) }
         ) {

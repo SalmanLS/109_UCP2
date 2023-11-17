@@ -24,7 +24,6 @@ fun HalamanHome(
         Image(painter = image, contentDescription = "LOGO UMY")
         Button(
             onClick = onNextButtonClicked ,
-            modifier = Modifier.weight(1f)
         ) {
             Text(text = "Next")
         }
