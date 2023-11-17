@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ucp2</string>
+    <string name="ds1">Haris Setiawan</string>
+    <string name="ds2">Cahya Darmajati</string>
+    <string name="ds3">Aprilia Kurniawati</string>
+    <string name="nama">Nama Mahasiswa</string>
+    <string name="nim">NIM</string>
+    <string name="konsen">Konsenstrasi</string>
+    <string name="judul">Judul Skripsi</string>
+    <string name="dsp1">Dosen Pembimbing 1</string>
+    <string name="dsp2">Dosen Pembimbing 1</string>
+</resources>
