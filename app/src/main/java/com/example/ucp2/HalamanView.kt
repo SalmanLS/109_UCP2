@@ -52,11 +52,10 @@ fun HalamanView(
             }
             Spacer(modifier = Modifier.height(8.dp))
             Button(
-                modifier = Modifier.weight(1f),
                 // the button is enabled when the user makes a selection
-                onClick = { onBackButtonClicked }
+                onClick =  onBackButtonClicked
             ) {
-                Text(text = "Submit")
+                Text(text = "Back")
             }
         }
 

@@ -62,7 +62,7 @@ fun Ucp2App(
             composable(route = PengelolaHalaman.View.name) {
                 HalamanView(
                     formUiState = uiState,
-                    onBackButtonClicked = { cancelOrderAndNavigateToRasa(navController) }
+                    onBackButtonClicked = { cancelAndNavigateToRasa(navController) }
                 )
             }
 
@@ -72,7 +72,7 @@ fun Ucp2App(
 
 }
 
-private fun cancelOrderAndNavigateToRasa(
+private fun cancelAndNavigateToRasa(
     navController: NavHostController
 ) {
     navController.popBackStack(PengelolaHalaman.Form.name, inclusive = false)
